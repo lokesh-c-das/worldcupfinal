@@ -1,1 +1,27 @@
-<h1><%= link_to 'World Cup Finals', root_path %></h1>
+<h1>World Cup Finals</h1>
+
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Year</th>
+      <th scope="col">Champion</th>
+      <th scope="col">Score</th>
+      <th scope="col">Runnerup</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+  <% finals.each do |final|%>
+    <tr>
+      <th scope="row"> <%= final.year%> </th>
+      <td><%= final.champion%></td>
+      <td><%= final.champion_score%>-<%= final.runner_up_score%></td>
+      <td><%= final.runner_up%></td>
+      <td></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
