@@ -19,6 +19,11 @@
         </ul>
       </div>
     </nav>
+    <% flash.each do |type, msg| %>
+      <div class="alert alert-<%=type%>">
+        <%= msg %>
+      </div>
+    <% end %>
 
     <main role="main" class="container">
         <%= yield %>
