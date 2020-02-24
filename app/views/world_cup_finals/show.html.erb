@@ -1,1 +1,9 @@
 <h1><%= world_cup_final.year%> World Cup Final</h1>
+
+<p>
+<%= world_cup_final.champion %>
+<%= world_cup_final.champion_score%> - <%= world_cup_final.runner_up_score%>
+<%= world_cup_final.runner_up%>
+</p>
+
+<%= link_to '🖋', edit_world_cup_final_path(world_cup_final) %> <%= link_to '🗑', world_cup_final_path(world_cup_final), method: :delete %>

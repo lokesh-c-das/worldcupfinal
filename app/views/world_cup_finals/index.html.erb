@@ -18,7 +18,9 @@
       <td><%= final.champion%></td>
       <td><%= final.champion_score%>-<%= final.runner_up_score%></td>
       <td><%= final.runner_up%></td>
-      <td></td>
+      <td> 
+      <%= link_to '🔎', world_cup_final_path(final)%>
+       <%= link_to '🖋', edit_world_cup_final_path(final) %> <%= link_to '🗑', world_cup_final_path(final), method: :delete %></td>
     </tr>
     <% end %>
   </tbody>
