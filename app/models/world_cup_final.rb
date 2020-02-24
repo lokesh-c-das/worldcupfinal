@@ -13,4 +13,9 @@
 #
 
 class WorldCupFinal < ApplicationRecord
+    validates :year, presence:true
+    validates :champion, presence:true
+    validates :champion_score, presence:true
+    validates :runner_up, presence:true
+    validates :runner_up_score, presence:true
 end
