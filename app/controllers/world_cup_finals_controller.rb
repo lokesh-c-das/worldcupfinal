@@ -12,4 +12,11 @@ class WorldCupFinalsController < ApplicationController
       format.html{render :show, locals:{world_cup_final:world_cup_final}}
     end
   end
+
+  def new
+    world_cup_final = WorldCupFinal.new
+    respond_to do |format|
+      format.html{render :new, locals:{world_cup_final:world_cup_final}}
+    end
+  end
 end

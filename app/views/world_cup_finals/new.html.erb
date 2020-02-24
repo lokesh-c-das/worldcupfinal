@@ -1,0 +1,25 @@
+<h1> New World Cup Final</h1>
+
+<%= form_with model: world_cup_final, url:world_cup_finals_path, method: :post, local:true, scope: :world_cup_final  do |final|%>
+    <div>
+        <%= final.label :year %><br>
+        <%= final.number_field :year %>
+    </div>
+    <div>
+        <%= final.label :champion %><br>
+        <%= final.text_field :champion %>
+    </div>
+    <div>
+        <%= final.label :champion_score %><br>
+        <%= final.number_field :champion_score %>
+    </div>
+    <div>
+        <%= final.label :runnerup %><br>
+        <%= final.text_field :runner_up %>
+    </div>
+    <div>
+        <%= final.label :runnerup_score %><br>
+        <%= final.number_field :runner_up_score %>
+    </div>
+    <%=final.submit "create new world cup"%>
+<% end %>
