@@ -57,3 +57,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pgreset', '~> 0.1.1'
 
 gem 'annotate', group: :development
+gem 'bootstrap-sass'
