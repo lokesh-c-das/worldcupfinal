@@ -1,4 +1,5 @@
 class WorldCupFinalsController < ApplicationController
+  before_action :authenticate_user!, except: [:index]
   def index
     finals = WorldCupFinal.all()
     respond_to do |format|

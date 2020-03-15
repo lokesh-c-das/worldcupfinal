@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  devise_for :users
   root to: 'world_cup_finals#index'
   get 'world_cup_finals', to:'world_cup_finals#index', as:'world_cup_finals'
 
